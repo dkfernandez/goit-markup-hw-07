@@ -880,8 +880,7 @@ link {
 }
 
 .checkbox-icon:hover,
-.checkbox-icon:focus {
-}
+.checkbox-icon:focus
 
 .check-mark {
   display: block;
@@ -936,6 +935,8 @@ link {
   color: var(--oceancolor);
   text-decoration-color: rgba(0, 0, 255, 0);
 }
+
+/*HW7*/
 
 .mobile-menu-container {
   position: fixed;
@@ -1174,3 +1175,5 @@ link {
       url(../images/herobg.png);
     background-size: cover;
   }
+}
+}
