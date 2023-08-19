@@ -936,3 +936,241 @@ link {
   color: var(--oceancolor);
   text-decoration-color: rgba(0, 0, 255, 0);
 }
+
+.mobile-menu-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 0 40px 40px;
+  transform: translateY(100%);
+  background: var(--whitecolor, #fff);
+  transition: transform 250ms ease-in-out;
+}
+.container-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  transition-property: All;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-container.is-open {
+  transform: translateY(0);
+  visibility: visible;
+  transition: transform 0.25s ease-out;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media screen and (max-width: 380px) {
+  .mobile-menu-container {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
+    display: none;
+  }
+
+  .mobile-menu-list {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .mobile-menu-link-active {
+    color: var(--oceancolor);
+  }
+  
+  .mobile-menu-list_item {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .mobile-container-footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: last baseline;
+  }
+  .mobile-contact-container {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+  }
+  
+  .mobile-contact_tel {
+    color: var(--iriscolor);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  
+  .mobile-contact_email {
+    color: var(--slatecolor);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+  
+  .mobile-social-container {
+    width: 100%;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 56px;
+    margin-top: 48px;
+  }
+  
+  /*Mobile*/
+  @media screen and (max-width: 428px) {
+    .mobile-social-container {
+      gap: 24px;
+    }
+    .mobile-contact_tel {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .mobile-contact_tel {
+      font-size: 26px;
+    }
+    .mobile-social-container {
+      gap: 24px;
+    }
+  }
+  /*Tablet*/
+  @media screen and (min-width: 768px) {
+    .mobile-menu-container {
+      display: none;
+    }
+    .header-container {
+      width: 768px;
+      height: 72px;
+    }
+  
+    .menu {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-left: 115px;
+    }
+  
+    .container-contacts {
+      display: block;
+      flex-wrap: wrap;
+      margin-left: 121px;
+      gap: 12px;
+    }
+    .contact-links {
+      display: block;
+      margin: 16px 0;
+      padding: 0;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.48px;
+    }
+  
+    .burger-btn {
+      display: none;
+    }
+  }
+  
+  /*Desktop*/
+  @media screen and (min-width: 1158px) {
+    .header-container {
+      width: 1440px;
+      display: flex;
+      height: 72px;
+      justify-content: space-between;
+    }
+  
+    .menu {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-left: 76px;
+    }
+    .burger-btn {
+      display: none;
+    }
+    .contact-links {
+      display: block;
+      margin: 16px 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  /*HERO*/
+.hero {
+  background-color: var(--navyblue);
+  background: linear-gradient(
+      to right,
+      var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+    ),
+    url(../images/herobgmobile.jpg);
+  background-size: cover;
+  padding: 112px 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobgmobile.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobg.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobg.png);
+    background-size: cover;
+  }
