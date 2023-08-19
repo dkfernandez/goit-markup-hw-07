@@ -321,6 +321,44 @@ link {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--grey, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobgmobile.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--grey, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobg.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(
+        to right,
+        var(--grey, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+      ),
+      url(../images/herobg.png);
+    background-size: cover;
+  }
+}
+}
+
 .hero-title {
   color: var(--whitecolor);
   font-size: 56px;
@@ -1126,54 +1164,3 @@ link {
       font-weight: 400;
     }
   }
-
-  /*HERO*/
-.hero {
-  background-color: var(--navyblue);
-  background: linear-gradient(
-      to right,
-      var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
-    ),
-    url(../images/herobgmobile.jpg);
-  background-size: cover;
-  padding: 112px 0;
-  width: 100%;
-  flex-shrink: 0;
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background: linear-gradient(
-        to right,
-        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
-      ),
-      url(../images/herobgmobile.jpg);
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background: linear-gradient(
-        to right,
-        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
-      ),
-      url(../images/herobg.png);
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background: linear-gradient(
-        to right,
-        var(--lightslate, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
-      ),
-      url(../images/herobg.png);
-    background-size: cover;
-  }
-}
-}
