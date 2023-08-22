@@ -971,7 +971,7 @@ link {
   text-decoration-color: rgba(0, 0, 255, 0);
 }
 
-/*HW7*/
+/*HW7
 
 .mobile-menu-container {
   position: fixed;
@@ -1080,7 +1080,7 @@ link {
     margin-top: 48px;
   }
 
-  /*Mobile*/
+  /*Mobile
   @media screen and (max-width: 428px) {
     .mobile-social-container {
       gap: 24px;
@@ -1098,7 +1098,8 @@ link {
       gap: 24px;
     }
   }
-  /*Tablet*/
+
+  /*Tablet
   @media screen and (min-width: 768px) {
     .mobile-menu-container {
       display: none;
@@ -1135,7 +1136,7 @@ link {
     }
   }
 
-  /*Desktop*/
+  /*Desktop
   @media screen and (min-width: 1158px) {
     .header-container {
       width: 1440px;
@@ -1161,4 +1162,3 @@ link {
       font-weight: 400;
     }
   }
-}
